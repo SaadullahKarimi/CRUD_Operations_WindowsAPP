@@ -1,0 +1,124 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace SuperMarketWindowsAPP
+{
+    public partial class Form1 : Form
+    {
+        int bindCounter = 0;
+        SqlDataAdapter da;
+        DataSet ds;
+        BindingSource bsTable;
+        public Form1()
+        {
+            da = new SqlDataAdapter();
+            ds = new DataSet();
+            bsTable = new BindingSource();
+
+            InitializeComponent();
+        }
+
+        private void btnsavedata_Click(object sender, EventArgs e)
+        {
+            {
+
+                da.InsertCommand = new SqlCommand("Insert into Customer (Cust_ID, F_Name, L_Name,Phone_Number, Address, Gender, Email, Age) values('" + txtid.Text + "','" + txtfname.Text + "', '" + txtlname.Text + "', '" + txtphoneno.Text + "','" + txtadd.Text + "','" + txtgender.Text + "', '" + txtEmail.Text + "','" + txtage.Text + "'); ",
+                Connectivity.cn);
+                Connectivity.Connect();
+                da.InsertCommand.ExecuteNonQuery();
+                Connectivity.Disconnect();
+
+
+
+
+
+
+
+
+            }
+        }
+        void showData(String Query)
+        {
+            da.SelectCommand = new SqlCommand(Query, Connectivity.cn);
+            ds.Clear();
+            da.Fill(ds);
+            DGVcust.DataSource = ds.Tables[0];
+            bsTable.DataSource = ds.Tables[0];
+            if (bindCounter == 0)
+            {
+                txtid.DataBindings.Add(new Binding("Text", bsTable, "Cust_ID"));
+                txtfname.DataBindings.Add(new Binding("Text", bsTable, "F_Name"));
+                txtlname.DataBindings.Add(new Binding("Text", bsTable, "L_Name"));
+                txtphoneno.DataBindings.Add(new Binding("Text", bsTable, "Phone_Number"));
+                txtadd.DataBindings.Add(new Binding("Text", bsTable, "Address"));
+                txtgender.DataBindings.Add(new Binding("Text", bsTable, "Gender"));
+                txtEmail.DataBindings.Add(new Binding("Text", bsTable, "Email"));
+                txtage.DataBindings.Add(new Binding("Text", bsTable, "Age"));
+
+                bindCounter = 1;
+
+            }
+            selectrow();
+              }
+            void selectrow()
+            {
+
+                try
+                {
+                    DGVcust.ClearSelection();
+                    DGVcust.Rows[bsTable.Position].Selected = true;
+                    DGVcust.CurrentCell = DGVcust.Rows[bsTable.Position].Cells[0];
+                    
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+
+
+            }
+
+
+
+
+    
+
+    
+
+ 
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showData("Select * from Customer");
+
+
+        }
+
+        private void txtadd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DGVcust_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bsTable.Position = e.RowIndex;
+            selectrow();
+        }
+
+        private void txtphoneno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

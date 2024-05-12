@@ -1,0 +1,10 @@
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe.config
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.pdb
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Form1.resources
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Properties.Resources.resources
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.GenerateResource.cache
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe
+C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.pdb

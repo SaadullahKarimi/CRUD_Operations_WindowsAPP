@@ -120,5 +120,58 @@ namespace SuperMarketWindowsAPP
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {   
+            
+            // Delete a customer here 
+
+
+            if (string.IsNullOrEmpty(txtid.Text))
+            {
+                // Show a message dialog indicating that the customer ID is missing
+                MessageBox.Show("Please enter a valid customer ID.", "Missing Customer ID", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Exit the method without further processing
+            }
+            int customerId = int.Parse(txtid.Text); // Parse the customer ID from the input
+
+            
+            if (!int.TryParse(txtid.Text, out customerId))
+            {
+                // Show a message dialog if the input is not a valid integer
+                MessageBox.Show("Invalid customer ID. Please enter a numeric value.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method
+            }
+
+            // Assuming 'Cust_ID' is the primary key for identifying customers
+
+            using (SqlConnection connection = new SqlConnection("Data source = nazari-ibrahim;  initial catalog=homework; user =ibrahim; password=12345"))
+            {
+                connection.Open();
+
+                // Construct the SQL query
+                string deleteQuery = "DELETE FROM Customer WHERE Cust_ID = @CustomerId";
+
+                using (SqlCommand command = new SqlCommand(deleteQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@CustomerId", customerId);
+
+                    // Execute the query
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        // Customer deleted successfully
+                        // You can add any additional logic or UI updates here
+                    }
+                    else
+                    {
+                        // Customer with the specified ID was not found
+                        // Handle this case as needed
+                    }
+                }
+            }
+        }
+
     }
 }

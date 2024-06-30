@@ -8,3 +8,13 @@ C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\
 C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.CoreCompileInputs.cache
 C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe
 C:\Users\Gebruiker\source\repos\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.pdb
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe.config
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.pdb
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.AssemblyReference.cache
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Form1.resources
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Properties.Resources.resources
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.GenerateResource.cache
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.CoreCompileInputs.cache
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe
+C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.pdb

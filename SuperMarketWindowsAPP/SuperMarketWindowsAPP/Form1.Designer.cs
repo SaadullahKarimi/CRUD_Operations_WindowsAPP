@@ -48,6 +48,7 @@ namespace SuperMarketWindowsAPP
             this.btnsavedata = new System.Windows.Forms.Button();
             this.btnshowdata = new System.Windows.Forms.Button();
             this.DGVcust = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVcust)).BeginInit();
             this.SuspendLayout();
             // 
@@ -239,11 +240,25 @@ namespace SuperMarketWindowsAPP
             this.DGVcust.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVcust_CellContentClick);
             this.DGVcust.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVcust_CellContentClick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(779, 453);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 40);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Delete data";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1088, 523);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.DGVcust);
             this.Controls.Add(this.btnshowdata);
             this.Controls.Add(this.btnsavedata);
@@ -292,6 +307,7 @@ namespace SuperMarketWindowsAPP
         private System.Windows.Forms.Button btnsavedata;
         private System.Windows.Forms.Button btnshowdata;
         private System.Windows.Forms.DataGridView DGVcust;
+        private System.Windows.Forms.Button button1;
     }
 }
 

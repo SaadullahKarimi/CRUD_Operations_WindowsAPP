@@ -6,7 +6,7 @@ For running the code we need to install below softwares
 
 2: Microsoft Visual Studio 2022: https://visualstudio.microsoft.com/vs/community/
 
-3: Restore supermarket.bak backup file in SSMS database 
+3: Restore SuperMarket.bak, database backup file in SSMS database 
 
 Front End Preview 
 

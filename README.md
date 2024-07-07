@@ -6,6 +6,8 @@ For running the code we need to install below softwares
 
 2: Microsoft Visual Studio 2022: https://visualstudio.microsoft.com/vs/community/
 
+3: Restore supermarket.bak backup file in SSMS database 
+
 Front End Preview 
 
 ![image](https://github.com/SaadullahKarimi/CRUD_Operations_WindowsAPP/assets/79996938/9bb277bc-d9ef-4794-9a84-c118a9174486)

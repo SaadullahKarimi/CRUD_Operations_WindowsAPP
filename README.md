@@ -12,4 +12,4 @@ Front End Preview
 
 ![image](https://github.com/SaadullahKarimi/CRUD_Operations_WindowsAPP/assets/79996938/9bb277bc-d9ef-4794-9a84-c118a9174486)
 
-Contribution remains for adding search function and Update Function and more. Anyone interested is kindly requested to contribute to the remaining part of this project.
+Contribution remains for adding Update Function and more. Anyone interested is kindly requested to contribute to the remaining part of this project.

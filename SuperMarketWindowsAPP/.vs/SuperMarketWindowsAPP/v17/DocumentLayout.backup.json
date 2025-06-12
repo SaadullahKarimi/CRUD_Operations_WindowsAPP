@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\supermarketwindowsapp\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|solutionrelative:supermarketwindowsapp\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\SuperMarketWindowsAPP\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|solutionrelative:SuperMarketWindowsAPP\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\supermarketwindowsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|solutionrelative:SuperMarketWindowsAPP\\Connectivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|j:\\1404 practices\\crud_operations_windowsapp\\supermarketwindowsapp\\supermarketwindowsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|solutionrelative:supermarketwindowsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\supermarketwindowsapp\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{12DC3882-BED3-4ECB-9F7C-9D205950508D}|SuperMarketWindowsAPP\\SuperMarketWindowsAPP.csproj|solutionrelative:supermarketwindowsapp\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -43,13 +43,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\SuperMarketWindowsAPP\\Form1.cs",
               "RelativeDocumentMoniker": "SuperMarketWindowsAPP\\Form1.cs",
               "ToolTip": "J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\SuperMarketWindowsAPP\\Form1.cs",
               "RelativeToolTip": "SuperMarketWindowsAPP\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAYwNIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T07:46:53.324Z",
               "EditorCaption": ""
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.resx",
               "DocumentMoniker": "J:\\1404 practices\\CRUD_Operations_WindowsAPP\\SuperMarketWindowsAPP\\SuperMarketWindowsAPP\\Form1.resx",
               "RelativeDocumentMoniker": "SuperMarketWindowsAPP\\Form1.resx",

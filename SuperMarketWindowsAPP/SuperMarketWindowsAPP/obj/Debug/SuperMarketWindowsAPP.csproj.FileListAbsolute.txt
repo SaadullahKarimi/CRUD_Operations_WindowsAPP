@@ -18,3 +18,14 @@ C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsA
 C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.CoreCompileInputs.cache
 C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe
 C:\Users\Ibrahim\Source\Repos\hom-work\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.pdb
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe.config
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.pdb
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.AssemblyReference.cache
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.exe.config
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Form1.resources
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.Properties.Resources.resources
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.GenerateResource.cache
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\obj\Debug\SuperMarketWindowsAPP.csproj.CoreCompileInputs.cache
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.exe
+J:\1404 practices\CRUD_Operations_WindowsAPP\SuperMarketWindowsAPP\SuperMarketWindowsAPP\bin\Debug\SuperMarketWindowsAPP.pdb

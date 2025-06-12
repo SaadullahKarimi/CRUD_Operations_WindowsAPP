@@ -9,7 +9,7 @@ namespace SuperMarketWindowsAPP
 {
     class Connectivity
     {
-        public static SqlConnection cn = new SqlConnection("Data source = KARIMI;  initial catalog=SuperMarket; user =sa; password=123");
+        public static SqlConnection cn = new SqlConnection("Data source = MYADMIN;  initial catalog=SuperMarket; Integrated Security=true; user =rasouli; password=1234@asdf");
 
 
 

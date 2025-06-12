@@ -51,6 +51,7 @@ namespace SuperMarketWindowsAPP
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelHeader = new System.Windows.Forms.Label();
+            this.btnsearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVcust)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,7 +127,7 @@ namespace SuperMarketWindowsAPP
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.Location = new System.Drawing.Point(20, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "CustomerID";
             // 
@@ -196,7 +197,7 @@ namespace SuperMarketWindowsAPP
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label8.Location = new System.Drawing.Point(20, 310);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
+            this.label8.Size = new System.Drawing.Size(38, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = "Age";
             // 
@@ -220,7 +221,6 @@ namespace SuperMarketWindowsAPP
             this.btnshowdata.TabIndex = 17;
             this.btnshowdata.Text = "Show Data";
             this.btnshowdata.UseVisualStyleBackColor = true;
-            this.btnshowdata.Click += new System.EventHandler(this.btnshowdata_Click);
             // 
             // DGVcust
             // 
@@ -291,15 +291,29 @@ namespace SuperMarketWindowsAPP
             this.labelHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.labelHeader.Location = new System.Drawing.Point(450, 20);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(200, 31);
+            this.labelHeader.Size = new System.Drawing.Size(210, 31);
             this.labelHeader.TabIndex = 22;
             this.labelHeader.Text = "Customer Data";
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnsearch.Location = new System.Drawing.Point(148, 480);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(196, 50);
+            this.btnsearch.TabIndex = 23;
+            this.btnsearch.Text = "Click to search";
+            this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 561);
+            this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.labelHeader);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -340,5 +354,6 @@ namespace SuperMarketWindowsAPP
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label labelHeader;
+        private System.Windows.Forms.Button btnsearch;
     }
 }

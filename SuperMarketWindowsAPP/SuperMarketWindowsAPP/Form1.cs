@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace SuperMarketWindowsAPP
 {
@@ -67,34 +71,34 @@ namespace SuperMarketWindowsAPP
 
             }
             selectrow();
-              }
-            void selectrow()
+        }
+        void selectrow()
+        {
+
+            try
             {
+                DGVcust.ClearSelection();
+                DGVcust.Rows[bsTable.Position].Selected = true;
+                DGVcust.CurrentCell = DGVcust.Rows[bsTable.Position].Cells[0];
 
-                try
-                {
-                    DGVcust.ClearSelection();
-                    DGVcust.Rows[bsTable.Position].Selected = true;
-                    DGVcust.CurrentCell = DGVcust.Rows[bsTable.Position].Cells[0];
-                    
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-
+            }
+            catch (Exception ex)
+            {
 
             }
 
 
 
+        }
 
-    
 
-    
 
- 
+
+
+
+
+
+
 
 
 
@@ -122,8 +126,8 @@ namespace SuperMarketWindowsAPP
         }
 
         private void button1_Click_1(object sender, EventArgs e)
-        {   
-            
+        {
+
             // Delete a customer here 
 
 
@@ -135,7 +139,7 @@ namespace SuperMarketWindowsAPP
             }
             int customerId = int.Parse(txtid.Text); // Parse the customer ID from the input
 
-            
+
             if (!int.TryParse(txtid.Text, out customerId))
             {
                 // Show a message dialog if the input is not a valid integer
@@ -173,5 +177,39 @@ namespace SuperMarketWindowsAPP
             }
         }
 
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            // connection according to sql server credential in my pc
+
+            using (SqlConnection connection = new SqlConnection("Data source = MYADMIN;  initial catalog=SuperMarket; user =rasouli; password=1234@asdf"))
+            {
+                connection.Open();
+
+                SqlCommand searchCommand = new SqlCommand("SELECT * FROM Customer WHERE Cust_ID = @CustID", Connectivity.cn);
+                searchCommand.Parameters.AddWithValue("@CustID", txtid.Text);// you enter id for customer and click on search to show
+
+                Connectivity.Connect();
+                SqlDataReader reader = searchCommand.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    txtfname.Text = reader["F_Name"].ToString();
+                    txtlname.Text = reader["L_Name"].ToString();
+                    txtphoneno.Text = reader["Phone_Number"].ToString();
+                    txtadd.Text = reader["Address"].ToString();
+                    txtgender.Text = reader["Gender"].ToString();
+                    txtEmail.Text = reader["Email"].ToString();
+                    txtage.Text = reader["Age"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Customer not found!");
+                }
+
+                reader.Close();
+                Connectivity.Disconnect();
+
+            }
+        }
     }
 }

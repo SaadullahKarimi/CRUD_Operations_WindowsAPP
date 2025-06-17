@@ -33,20 +33,11 @@ namespace SuperMarketWindowsAPP
         private void btnsavedata_Click(object sender, EventArgs e)
         {
             {
-
                 da.InsertCommand = new SqlCommand("Insert into Customer (Cust_ID, F_Name, L_Name,Phone_Number, Address, Gender, Email, Age) values('" + txtid.Text + "','" + txtfname.Text + "', '" + txtlname.Text + "', '" + txtphoneno.Text + "','" + txtadd.Text + "','" + txtgender.Text + "', '" + txtEmail.Text + "','" + txtage.Text + "'); ",
                 Connectivity.cn);
                 Connectivity.Connect();
                 da.InsertCommand.ExecuteNonQuery();
                 Connectivity.Disconnect();
-
-
-
-
-
-
-
-
             }
         }
         void showData(String Query)
@@ -209,6 +200,61 @@ namespace SuperMarketWindowsAPP
                 reader.Close();
                 Connectivity.Disconnect();
 
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtid.Text))
+            {
+                MessageBox.Show("Please enter a valid Customer ID to update.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection("Data source = MYADMIN; initial catalog=SuperMarket; user=rasouli; password=1234@asdf"))
+                {
+                    connection.Open();
+
+                    string updateQuery = @"UPDATE Customer 
+                                   SET F_Name = @FName, 
+                                       L_Name = @LName, 
+                                       Phone_Number = @PhoneNumber, 
+                                       Address = @Address, 
+                                       Gender = @Gender, 
+                                       Email = @Email, 
+                                       Age = @Age 
+                                   WHERE Cust_ID = @CustID";
+
+                    using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@CustID", txtid.Text);
+                        command.Parameters.AddWithValue("@FName", txtfname.Text);
+                        command.Parameters.AddWithValue("@LName", txtlname.Text);
+                        command.Parameters.AddWithValue("@PhoneNumber", txtphoneno.Text);
+                        command.Parameters.AddWithValue("@Address", txtadd.Text);
+                        command.Parameters.AddWithValue("@Gender", txtgender.Text);
+                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
+                        command.Parameters.AddWithValue("@Age", txtage.Text);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Customer updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            showData("SELECT * FROM Customer"); // refresh grid
+                        }
+                        else
+                        {
+                            MessageBox.Show("Customer not found or no changes made.", "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating customer: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

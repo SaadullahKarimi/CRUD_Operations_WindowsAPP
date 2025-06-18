@@ -11,8 +11,6 @@ namespace SuperMarketWindowsAPP
     {
         public static SqlConnection cn = new SqlConnection("Data source = MYADMIN;  initial catalog=SuperMarket; Integrated Security=true; user =rasouli; password=1234@asdf");
 
-
-
         public static void Connect()
         {
             if (cn.State == System.Data.ConnectionState.Closed)
